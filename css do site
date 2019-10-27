@@ -1,0 +1,156 @@
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: blue;
+}
+
+.grid1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+  grid-gap: 30px;
+}
+
+.flex {
+  padding-left: 9em;
+  width: 100px;
+  height: 150px;
+}
+
+.subtitulo {
+  color: #0024e2;
+  margin-top: 10px;
+  text-shadow: 1px 1px 1px #666;
+  text-align: #frase;
+}
+
+.grid2 {
+  background-color: #e5e5e5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 900px;
+  padding: 10px;
+  margin: auto;
+  grid-gap: 20px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.clear {
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  border-bottom: 10px;
+}
+p {
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  background: #0024e2;
+  position: relative;
+  text-shadow: 1px 1px 1px #666;
+  border-top: 10px #666 solid;
+  border-bottom: 10px #666 solid;
+}
+.menu2 {
+  list-style: none;
+  position: relative;
+  z-index: 2;
+}
+.menu2 li,
+.submenu li {
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.menu2 > li {
+  border-radius: 10px 10px 0 0;
+}
+.submenu {
+  border-radius: 0 0 10px 10px;
+}
+.menu2 li:hover,
+.menu2 li:hover ul {
+  display: block;
+  background: #999;
+}
+.menu2 li a {
+  font: 16px play, Geneva, sans-serif;
+  color: #fff;
+  display: block;
+  padding: 0 20px;
+  line-height: 64px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#logo {
+  width: 20%;
+  float: left;
+}
+#logo img {
+  margin: 10px;
+  width: 80%;
+}
+#frase {
+  font-family: "Arizonia";
+  font-size: 20px;
+  width: 60%;
+  float: left;
+  text-align: center;
+  margin-top: 50px;
+}
+#frase h1,
+frase h2 {
+  margin: 0;
+  padding: 0;
+}
+#frase h1 {
+  color: #0024e2;
+}
+#frase h2 {
+  color: #666;
+}
+#tel {
+  width: 20%;
+  float: right;
+  position: relative;
+}
+#tel p {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: #666;
+  font-weight: bold;
+}
+#tel img {
+  margin-right: 10px;
+}
