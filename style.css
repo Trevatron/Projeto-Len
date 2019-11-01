@@ -23,11 +23,10 @@ a {
 }
 
 .flex {
-   text-align: justify;
-    padding: 60px;
-    font-size: 22px;
-    width: 1320px;
-
+  text-align: justify;
+  padding: 60px;
+  font-size: 22px;
+  width: 1320px;
 }
 
 .subtitulo {
@@ -84,15 +83,15 @@ p {
 }
 .menu2 {
   list-style: none;
-  
+
   position: relative;
   z-index: 2;
 }
 .menu2 li,
 .submenu li {
   display: inline-block;
-  float: left; center
-  position: relative;
+  float: left;
+  centerposition: relative;
 }
 .menu2 > li {
   border-radius: 10px 10px 0 0;
@@ -160,18 +159,51 @@ frase h2 {
 
 .t2 {
   width: 100%;
-    float: left;
-    text-align: center;
-    margin-top: 50px;
-    color:  #0024e2;
+  float: left;
+  text-align: center;
+  margin-top: 50px;
+  color: #0024e2;
 }
 
 .sobre {
   padding: 10px;
-       color: #0024e2;
-        font-weight: bold;
-        font-size: 35px;
-        text-align: left;
-  }
-   
+  color: #0024e2;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: left;
+}
+
+.formu2 {
+  width: 100px;
+  height: 30px;
+  background-color: #999999;
+}
+
+.formu {
+  width: 980px;
+  height: 50px;
+  background-color: #999999;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+}
+
+.flex2 {
+  font-size: 24px;
+  width: 800px;
+}
+
+.formucadas {
+  width: 880px;
+  height: 50px;
+  background-color: #999999;
+}
+
+.buttoncadas {
+  width: 100px;
+  height: 50px;
+}
+
 
