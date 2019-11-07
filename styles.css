@@ -1,6 +1,7 @@
 a {
-  color: #fff;
+  color: black;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .header {
@@ -16,21 +17,30 @@ a {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-width: 800px;
+  max-width: 900px;
   padding: 10px;
   margin: 0 auto;
   grid-gap: 30px;
 }
 
-.flex {
+.textolinear {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  
+}
+
+/*.flex {
+  width: 100%;
   text-align: justify;
   padding: 60px;
   font-size: 22px;
-  width: 1320px;
+  width: 900px;
 }
+*/
 
 .subtitulo {
-  color: #0024e2;
+  color: white;
   margin-top: 10px;
   text-shadow: 1px 1px 1px #666;
   text-align: #frase;
@@ -40,7 +50,7 @@ a {
   background-color: #e5e5e5;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 900px;
+
   padding: 10px;
   margin: auto;
   grid-gap: 20px;
@@ -64,10 +74,15 @@ html {
   padding: 0;
 }
 body {
-  height: 100%;
+  width: 1200px
+  height: 1900px;
   border-bottom: 10px;
+  background-image: url("img/fundo7.jpg");
+  background-color: white
+
+
 }
-p {
+ .p {
   text-align: justify;
   text-indent: 50px;
 }
@@ -81,38 +96,6 @@ p {
   border-top: 10px #666 solid;
   border-bottom: 10px #666 solid;
 }
-.menu2 {
-  list-style: none;
-
-  position: relative;
-  z-index: 2;
-}
-.menu2 li,
-.submenu li {
-  display: inline-block;
-  float: left;
-  centerposition: relative;
-}
-.menu2 > li {
-  border-radius: 10px 10px 0 0;
-}
-.submenu {
-  border-radius: 0 0 10px 10px;
-}
-.menu2 li:hover,
-.menu2 li:hover ul {
-  display: block;
-  background: #999;
-}
-.menu2 li a {
-  font: 16px play, Geneva, sans-serif;
-  color: #fff;
-  display: block;
-  padding: 0 20px;
-  line-height: 64px;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 #logo {
   width: 20%;
@@ -122,55 +105,33 @@ p {
   margin: 10px;
   width: 80%;
 }
+
 #frase {
   font-family: "Arizonia";
-  font-size: 20px;
-  width: 60%;
-  float: left;
-  text-align: center;
-  margin-top: 50px;
+  font-size: 40px;
 }
-#frase h1,
-frase h2 {
-  margin: 0;
-  padding: 0;
-}
+
 #frase h1 {
-  color: #0024e2;
-}
-#frase h2 {
-  color: #666;
-}
-#tel {
-  width: 20%;
-  float: right;
-  position: relative;
-}
-#tel p {
-  position: absolute;
-  top: 20px;
-  right: 10px;
-  color: #666;
-  font-weight: bold;
-}
-#tel img {
-  margin-right: 10px;
+  color: white;
+  font-size: 90px;
 }
 
 .t2 {
+  font-size: 30px;
   width: 100%;
   float: left;
   text-align: center;
-  margin-top: 50px;
-  color: #0024e2;
+  color: white;
+  margin-top: 70px;
 }
 
 .sobre {
+  margin-top: 70px;
   padding: 10px;
-  color: #0024e2;
+  color: white;
   font-weight: bold;
   font-size: 35px;
-  text-align: left;
+  text-align: center;
 }
 
 .formu2 {
@@ -190,10 +151,11 @@ frase h2 {
   height: 50px;
 }
 
-.flex2 {
+/*.flex2 {
   font-size: 24px;
   width: 800px;
 }
+*/
 
 .formucadas {
   width: 880px;
@@ -206,4 +168,79 @@ frase h2 {
   height: 50px;
 }
 
+/* Estilizando o menu */
+.menu {
+  list-style: none;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+}
+
+
+.menu li,
+.submenu li {
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.menu > li {
+  border-radius: 10px 10px 0 0;
+}
+.submenu {
+  border-radius: 0 0 10px 10px;
+}
+
+.menu li:hover,
+.menu li:hover ul {
+  display: block;
+  background: #999;
+}
+.menu li a {
+  font: 22px Verdana, Geneva, sans-serif;
+  color: #fff;
+  display: block;
+  padding: 0 20px;
+  line-height: 64px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  border: 1px #ccc solid;
+}
+
+.submenu li {
+  float: left;
+  display: block;
+  width: 250px;
+  border-bottom: 1px #ccc dotted;
+}
+
+.submenu li:last-child {
+  border: 0;
+}
+.submenu li a {
+  line-height: 3em;
+}
+.submenu li:hover a {
+  background: #eee;
+}
+/* Fim do menu */
+
+
+.container {
+  width: 890px;
+  height: 390px;
+}
+
+
+.carousel-inner {
+    width: 890px;
+    height: 390px;
+}
 
